@@ -2,9 +2,17 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.13.0'
+        classpath 'com.android.tools.build:gradle:3.3.2'
+    }
+}
+allprojects {
+    repositories {
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
+        jcenter()
     }
 }
